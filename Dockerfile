@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 
 ARG RCON_PASSWORD=abc123
 
-ARG REVISION=1.14.3
+ARG REVISION=1.15.2
 
 ENV RCON_PASSWORD=${RCON_PASSWORD}
 
@@ -23,5 +23,5 @@ RUN echo 'enable-rcon=true' >> server.properties
 
 RUN echo rcon.password=${RCON_PASSWORD} >> server.properties
 
-CMD java -jar spigot-1.14.4.jar
+CMD java -jar spigot-1.15.2.jar
 
